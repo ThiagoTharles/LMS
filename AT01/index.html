@@ -6,45 +6,62 @@
     <title>R6 info</title>
 </head>
 <body>
+    <!-- a estilizacao CSS do codigo -->
     <style>
         body {
             background-color: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
             font-family: Arial, Helvetica, sans-serif;
         }
-        h1 {
+        header {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            font-size: 50px;
+            padding: 5px;
         }
-        h2 {
+        nav {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            font-size: 30px;
+            padding: 5px;
         }
-        p {
-            text-align: justify;
-            font-size: 20px;
-        }
-        ul {
+        nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: rgb(0, 0, 0);
-            height: 60px;
         }
-        li {
+        nav li {
             float: left;
         }
-        li a {
+        nav li a {
             display: block;
-            color: rgb(255, 255, 255);
+            color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
-        li a:hover {
+        nav li a:hover {
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
+        }
+        .corpo {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 5px;
+        }
+        #time {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+            align-self: center;
         }
         Table {
             border: 1px solid rgb(255, 255, 255);
@@ -62,23 +79,119 @@
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
         }
+        a {
+            color: rgb(255, 255, 255);
+        }
+        #mapa {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+        }
+        #form {
+            background-color: rgb(40, 40, 40);
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 5px 5px;
+            margin: 5px 200px;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=number], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=email], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=checkbox], select, textarea {
+            padding: 12px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=radio], select, textarea {
+            padding: 12px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 12px 20px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+            text-decoration: solid;
+        }
     </style>
-    <h1>Rainbow Six Seige por Thiago Tharles</h1>
-    <ul>
-        <li><a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege"><img src="nome.png" alt="logo" style="height: 30px; width: 120px;"></a></li>
-        <li><a href="#time">Time</a></li>
-        <li><a href="#mapa">Mapa</a></li>
-    </ul>
-    <a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege"><img src="banner.png" alt="R6" style="height: 30%; width: 100%;"></a>
-    <h2>Este não é um site informativo sobre o jogo Rainbow Six Siege!</h2>
-    <p>Rainbow Six Siege é um popular jogo de tiro em primeira pessoa (FPS) tático desenvolvido pela Ubisoft. Lançado em dezembro de 2015, o jogo é parte da franquia "Tom Clancy's Rainbow Six" e se destaca por sua ênfase na estratégia, cooperação e destruição do ambiente.
-    <p>No jogo, os jogadores assumem o papel de operadores de equipes especiais de contra-terrorismo de várias nações, conhecidas como a equipe "Rainbow Six". Cada operador possui habilidades únicas e um conjunto específico de armas e equipamentos. Os jogadores podem escolher entre uma variedade de modos de jogo, incluindo partidas casuais, ranqueadas e modos de treinamento.</p>
-    <p>A jogabilidade se concentra em partidas 5v5, onde uma equipe defende um objetivo específico enquanto a outra tenta atacar e completar esse objetivo. Os objetivos podem variar desde resgatar reféns até desarmar bombas. O jogo incentiva a comunicação e a colaboração entre os jogadores, pois as estratégias são essenciais para alcançar o sucesso.</p>
-    <p>A característica distintiva do jogo é a destruição do ambiente. Os jogadores podem atirar, perfurar e explodir paredes, pisos e tetos para criar novas linhas de visão, rotas de ataque e emboscadas. Isso adiciona uma camada extra de complexidade e tática ao jogo, já que os jogadores devem considerar a melhor forma de usar a destruição do ambiente a seu favor.</p>
-    <p>"Rainbow Six Siege" também apresenta um sistema de progressão, onde os jogadores ganham pontos de experiência para desbloquear novos operadores, armas e equipamentos. O jogo recebeu uma série de atualizações, incluindo novos mapas, operadores e ajustes de equilíbrio ao longo dos anos.</p>
-    <p>Devido à sua jogabilidade estratégica e tática, bem como à natureza em constante evolução do jogo, "Rainbow Six Siege" conquistou uma base de fãs dedicada e é amplamente jogado em competições de eSports e por jogadores casuais em todo o mundo.</p>
+    <!-- o codigo em si -->
+    <!-- o header com o logo e o menu -->
+    <header>
+        <h1>Rainbow Six Seige por Thiago Tharles</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege"><img src="nome.png" alt="logo" style="height: 30px; width: 120px;"></a></li>
+                <li><a href="#time">Time</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+                <li><a href="#form">Venha para o Time</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- um texto apresentando o jogo -->
+    <article class ="corpo">
+        <a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege"><img src="banner.png" alt="R6" style="height: 30%; width: 100%;"></a>
+        <h2>Este não é um site informativo sobre o jogo Rainbow Six Siege!</h2>
+        <p>Rainbow Six Siege é um popular jogo de tiro em primeira pessoa (FPS) tático desenvolvido pela Ubisoft. Lançado em dezembro de 2015, o jogo é parte da franquia "Tom Clancy's Rainbow Six" e se destaca por sua ênfase na estratégia, cooperação e destruição do ambiente.
+        <p>No jogo, os jogadores assumem o papel de operadores de equipes especiais de contra-terrorismo de várias nações, conhecidas como a equipe "Rainbow Six". Cada operador possui habilidades únicas e um conjunto específico de armas e equipamentos. Os jogadores podem escolher entre uma variedade de modos de jogo, incluindo partidas casuais, ranqueadas e modos de treinamento.</p>
+        <p>A jogabilidade se concentra em partidas 5v5, onde uma equipe defende um objetivo específico enquanto a outra tenta atacar e completar esse objetivo. Os objetivos podem variar desde resgatar reféns até desarmar bombas. O jogo incentiva a comunicação e a colaboração entre os jogadores, pois as estratégias são essenciais para alcançar o sucesso.</p>
+        <p>A característica distintiva do jogo é a destruição do ambiente. Os jogadores podem atirar, perfurar e explodir paredes, pisos e tetos para criar novas linhas de visão, rotas de ataque e emboscadas. Isso adiciona uma camada extra de complexidade e tática ao jogo, já que os jogadores devem considerar a melhor forma de usar a destruição do ambiente a seu favor.</p>
+        <p>"Rainbow Six Siege" também apresenta um sistema de progressão, onde os jogadores ganham pontos de experiência para desbloquear novos operadores, armas e equipamentos. O jogo recebeu uma série de atualizações, incluindo novos mapas, operadores e ajustes de equilíbrio ao longo dos anos.</p>
+        <p>Devido à sua jogabilidade estratégica e tática, bem como à natureza em constante evolução do jogo, "Rainbow Six Siege" conquistou uma base de fãs dedicada e é amplamente jogado em competições de eSports e por jogadores casuais em todo o mundo.</p>
+        <p>Fonte: ChatGPT.</p>
+    </article>
+    <!-- o time que eu torco -->
     <div id="time">
-        <h2>Esse é o time que eu torço no cenario competitivo</h2>
+        <h2>Esse é o time que eu torço no cenário competitivo</h2>
         <Table>
             <tr>
                 <th colspan="4">Team Liquid</th>
@@ -127,12 +240,52 @@
             </tr>
         </Table>
     </div>
+    <!-- o mapa litoral, meu mapa favorito -->
     <div id="mapa">
         <h2>Esse é o meu mapa favorito do mapa favorito</h2>
         <h3>Litoral</h3>
         <img src="litoral.webp" alt="mapa" style="height: 50%; width: 100%;">
         <img src="r6-maps-coastline-blueprint-1.jpg" alt="primeiro andar" style="height: 50%; width: 49.8%;">
         <img src="r6-maps-coastline-blueprint-2.jpg" alt="segundo andar" style="height: 50%; width: 49.8%;">
+    </div>
+        <!-- o formulario -->
+    <div id="form">
+        <h2>Quer entrar para o time?</h2>
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+            <label for="nome">Nome</label> <br>
+            <input type="text" id="nome" name="nome" placeholder="digite seu nome" required> <br> <br> 
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" placeholder="digite seu email" required> <br> <br> 
+            <label for="idade">Idade</label> <br>
+            <input type="number" id="idade" name="idade" placeholder="digite sua idade" required> <br> <br> 
+            <label for="nick">Nickname</label> <br>
+            <input type="text" id="nick" name="nick" placeholder="digite seu nickname" required> <br> <br> 
+            <label for="funcao">Função</label> <br>
+            <input type="checkbox" id="funcao" name="funcao" value="entry"> 
+            <label for="entry">Entry Fragger</label> <br> 
+            <input type="checkbox" id="funcao" name="funcao" value="flex"> 
+            <label for="flex">Flex</label> <br> 
+            <input type="checkbox" id="funcao" name="funcao" value="suport"> 
+            <label for="suport">Suport</label> <br> 
+            <input type="checkbox" id="funcao" name="funcao" value="coach"> 
+            <label for="coach">Coach</label> <br> 
+            <input type="checkbox" id="funcao" name="funcao" value="IGL"> 
+            <label for="IGL">IGL</label> <br> <br> 
+            <label for="time">Time</label> <br>
+            <input type="radio" name="time" id="time">
+            <label for="liquid">Team Liquid</label> <br>
+            <input type="radio" name="time" id="time">
+            <label for="faze">Faze Clan</label> <br>
+            <input type="radio" name="time" id="time">
+            <label for="nip">Ninjas in Pyjamas</label> <br>
+            <input type="radio" name="time" id="time">
+            <label for="bd">Black Dragons</label> <br>
+            <input type="radio" name="time" id="time">
+            <label for="outro">Outro</label> <br> <br>
+            <label for="msg">Mensagem</label> <br>
+            <textarea id="msg" name="msg" placeholder="digite sua mensagem" style="height:200px"></textarea> <br> <br> 
+            <input type="submit" value="Enviar">
+        </form>
     </div>
 </body>
 </html>
